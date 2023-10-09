@@ -1,0 +1,19 @@
+{
+  "name": "qr-code-ppk",
+  "version": "1.0.0",
+  "description": "A QR code I'm making because I know I'll use it later",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PKuzi01/qr-code-ppk.git"
+  },
+  "author": "Philisizwe Kuzwayo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PKuzi01/qr-code-ppk/issues"
+  },
+  "homepage": "https://github.com/PKuzi01/qr-code-ppk#readme"
+}
