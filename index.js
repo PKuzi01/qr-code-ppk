@@ -5,22 +5,25 @@ import fs from "fs";
 inquirer
   .prompt([
     {
-        message: "Enter URL:",
+        message: "Enter website: ",
         name: "URL",
     },
   ])
   .then((answers) => {
-   const url = answers.url;
-   var qr_svg = qr.image(url);
-    qr_svg.pipe(fs.createWriteStream("qr-image.png"));
-    writeFile("successURL.txt", data, (err) => {
+    console.log(answers);
+    let url = answers.URL;
+
+    var qr_png = qr.image(url);
+    qr_png.pipe(fs.createWriteStream("QR-img.png"));
+
+    writeFile('./URL.txt', data, (err) => {
         if (err) throw err;
-        console.log("It has been saved successfully")
-    })
+        console.log('Success!');
+      }); 
   })
   .catch((error) => {
     if (error.isTtyError) {
-      console.log("It's successful!");
+      // Prompt couldn't be rendered in the current environment
     } else {
       // Something else went wrong
     }
