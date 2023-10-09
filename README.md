@@ -1,4 +1,4 @@
-### QR Image creator
+### QR Image Generator
 
 Authored by Philisizwe Kuzwayo
 (The code came from the Angela Yu Web Development Bootcamp on Udemy)
